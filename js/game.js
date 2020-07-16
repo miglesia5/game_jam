@@ -13,11 +13,6 @@ const PLAYER_MAX_SPEED = 600.0;
 const LASER_MAX_SPEED = 300.0;
 const LASER_COOLDOWN = 0.5;
 
-const ENEMIES_PER_ROW = 7;
-const ENEMY_HORIZONTAL_PADDING = 80;
-const ENEMY_VERTICAL_PADDING = 70;
-const ENEMY_VERTICAL_SPACING = 80;
-const ENEMY_COOLDOWN = 5.0;
 
 const GAME_STATE = {
   lastTime: Date.now(),
@@ -162,44 +157,6 @@ function destroyLaser($container, laser) {
   laser.isDead = true;
 }
 
-function createEnemy($container, x, y) {
-  const $element = document.createElement("img");
-  $element.src = "img/enemy.png";
-  $element.className = "enemy";
-  $container.appendChild($element);
-  const enemy = {
-    x,
-    y,
-    cooldown: rand(0.5, ENEMY_COOLDOWN),
-    $element
-  };
-  GAME_STATE.enemies.push(enemy);
-  setPosition($element, x, y);
-}
-
-function updateEnemies(dt, $container) {
-  const dx = Math.sin(GAME_STATE.lastTime / 1000.0) * 50;
-  const dy = Math.cos(GAME_STATE.lastTime / 1000.0) * 10;
-
-  const enemies = GAME_STATE.enemies;
-  for (let i = 0; i < enemies.length; i++) {
-    const enemy = enemies[i];
-    const x = enemy.x + dx;
-    const y = enemy.y + dy;
-    setPosition(enemy.$element, x, y);
-    enemy.cooldown -= dt;
-    if (enemy.cooldown <= 0) {
-      createEnemyLaser($container, x, y);
-      enemy.cooldown = ENEMY_COOLDOWN;
-    }
-  }
-  GAME_STATE.enemies = GAME_STATE.enemies.filter(e => !e.isDead);
-}
-
-function destroyEnemy($container, enemy) {
-  $container.removeChild(enemy.$element);
-  enemy.isDead = true;
-}
 
 function init() {
   const $container = document.querySelector(".game");

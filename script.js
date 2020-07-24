@@ -30,7 +30,7 @@ function dropBox() {
 	thisBox.data("test", Math.round(Math.random()));
 	if (thisBox.data("test")) {
 		thisBox.css({
-			"background": "https://eimzpink.files.wordpress.com/2015/07/simpsons-donut.png')",
+			"background": "url('https://eimzpink.files.wordpress.com/2015/07/simpsons-donut.png')",
 			"background-size": "contain"
 		});
 	} else {

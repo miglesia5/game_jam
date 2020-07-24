@@ -11,7 +11,7 @@ function setBG() {
 	if (Math.round(Math.random())) {
 		return url(img/cookie.jpg);
 	} else {
-		return "http://icons.iconarchive.com/icons/gordon-irving/simpsons-2/128/Duff-2-icon.png";
+		return url(img/cake.jpg);
 	}
 }
 
@@ -35,7 +35,7 @@ function dropBox() {
 		});
 	} else {
 		thisBox.css({
-			"background": "url('http://icons.iconarchive.com/icons/gordon-irving/simpsons-2/128/Duff-2-icon.png')",
+			"background": "url(img/cake.jpg)",
 			"background-size": "contain"
 		});
 	}

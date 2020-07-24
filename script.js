@@ -9,7 +9,7 @@ function random(min, max) {
 
 function setBG() {
 	if (Math.round(Math.random())) {
-		return url(img/homer.png);
+		return url(img/cookie.jpg);
 	} else {
 		return "http://icons.iconarchive.com/icons/gordon-irving/simpsons-2/128/Duff-2-icon.png";
 	}
@@ -30,7 +30,7 @@ function dropBox() {
 	thisBox.data("test", Math.round(Math.random()));
 	if (thisBox.data("test")) {
 		thisBox.css({
-			"background": "url(img/homer.png)",
+			"background": "url(img/cookie.jpg)",
 			"background-size": "contain"
 		});
 	} else {

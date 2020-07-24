@@ -9,7 +9,7 @@ function random(min, max) {
 
 function setBG() {
 	if (Math.round(Math.random())) {
-		return "https://www.cookingclassy.com/wp-content/uploads/2014/06/chocolate-chip-cookie-16.jpg";
+		return "https://eimzpink.files.wordpress.com/2015/07/simpsons-donut.png";
 	} else {
 		return "http://icons.iconarchive.com/icons/gordon-irving/simpsons-2/128/Duff-2-icon.png";
 	}
@@ -30,7 +30,7 @@ function dropBox() {
 	thisBox.data("test", Math.round(Math.random()));
 	if (thisBox.data("test")) {
 		thisBox.css({
-			"background": "https://www.cookingclassy.com/wp-content/uploads/2014/06/chocolate-chip-cookie-16.jpg')",
+			"background": "https://eimzpink.files.wordpress.com/2015/07/simpsons-donut.png')",
 			"background-size": "contain"
 		});
 	} else {

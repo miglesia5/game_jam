@@ -1,0 +1,197 @@
+body {
+	background-color: white;
+	font-family: sans-serif;
+	color: gray;
+}
+
+.landingPage {
+	visibility: auto;
+	display: row;
+	justify-content: space-around;
+	width: 70vw;
+	height: 65vh;
+	font-family: verdana;
+	font-size: 14px;
+	position: absolute;
+	z-index: 1000;
+	background-color: white;
+	left: 15%;
+	top: 10%;
+	border-radius: 3%;
+}
+
+.instructions {
+	display: flex;
+	justify-content: space-around;
+}
+
+.logoHomer {
+	width: 15%;
+	height: 15%;
+}
+
+.text-center {
+	padding-top: 3%;
+	font-family: 'Rock Salt', cursive;
+}
+
+ul {
+	display: block;
+	list-style-type: disc;
+	font-family: verdana;
+	font-size: 14px;
+	padding-top: 5%;
+}
+
+.btn-success {
+	background-color: gold;
+	font-weight: bold;
+	font-family: verdana;
+	position: relative;
+	width: 5em;
+	font-size: 22px;
+	left: 45%;
+
+}
+
+.btn-success:hover {
+	background-color: lightpink;
+}
+
+.game {
+	background-image: url("https://vignette.wikia.nocookie.net/simpsons/images/a/a2/Wiki-background_update_2.jpg/revision/latest?cb=20111014041518");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+
+.score {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0 auto;
+	text-align: left;
+	font-family: verdana;
+	color: gold;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-left: 20px;
+	font-size: 35px;
+	position: relative;
+	z-index: 9999;
+}
+
+.box {
+
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: -150px;
+	transition: transform 1.5s linear;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.move {
+	transform: translateY(120vh);
+}
+
+#homerSimpson {
+	width: 200px;
+	height: 200px;
+	background-image: url(img/homer.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: 0;
+	z-index: 100;
+
+}
+
+.endGame {
+	visibility: hidden;
+	width: 70vw;
+	height: 60vh;
+	font-size: 14px;
+	position: absolute;
+	z-index: 1000;
+	background-color: rgba(255, 255, 255, 0.5);
+	left: 15%;
+	top: 10%;
+	border-radius: 3%;
+}
+
+.btn-default {
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+	font-family: verdana;
+	position: relative;
+	width: 7em;
+	font-size: 20px;
+	margin-top: 10%;
+
+}
+
+.btn-danger {
+	font-weight: bold;
+	font-family: verdana;
+	position: relative;
+	width: 7em;
+	font-size: 20px;
+	margin-top: 10%;
+
+}
+
+.btn-default:hover {
+	background-color: gold;
+}
+
+#logoMarge {
+	width: 70%;
+	height: 100%;
+	visibility: hidden;
+	z-index: 1000;
+}
+
+.flexbox, .options {
+	display: flex;
+	justify-content: space-around;
+}
+
+/* ========== Mobile version ========*/
+
+@media (max-width:380px) {
+
+	.container {
+		padding-right: 0;
+		padding-left: 0;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.title {
+		font-size: 18px;
+	}
+
+	ul {
+		font-size: 10px;
+	}
+
+	.instructions {
+		padding-top: 5vh;
+	}
+
+	.btn-success {
+		position: relative;
+		margin-top: 3vh;
+		left: 20vw;
+	}
+
+	.box {
+		width: 60px;
+		height: 60px;
+	}
+}

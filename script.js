@@ -91,13 +91,13 @@ var runGame = setInterval(function () {
 
 setInterval(function () {
 	if (score > 5) {
-		document.getElementById("homerSimpson").style.backgroundImage = "url(img/homerObese.png)";
+		document.getElementById("homerSimpson").style.backgroundImage = "url(img/fateric.png)";
 
 		document.getElementById("endGame").style.visibility = 'visible';
 		document.getElementById("logoMarge").style.visibility = 'visible';
 
 	} else if (score < -5) {
-		document.getElementById("homerSimpson").style.backgroundImage = "url(img/homerDrunk.png)";
+		document.getElementById("homerSimpson").style.backgroundImage = "url(img/strongeric.png)";
 
 		document.getElementById("endGame").style.visibility = 'visible';
 		document.getElementById("logoMarge").style.visibility = 'visible';

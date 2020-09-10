@@ -1,5 +1,5 @@
 body {
-	background-color: white;
+	background-color: radial-gradient(#9D5900, #3D2200);
 	font-family: sans-serif;
 	color: gray;
 }
@@ -14,7 +14,7 @@ body {
 	font-size: 14px;
 	position: absolute;
 	z-index: 1000;
-	background-color: white;
+	background-color: radial-gradient(#9D5900, #3D2200);
 	left: 15%;
 	top: 10%;
 	border-radius: 3%;
